@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Грехи</title>
+  <meta name="description" content="Фиксация грехов между исповедями и подготовка к Исповеди.">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #fff8f5;
+      --text: #2c1714;
+      --muted: #6e514a;
+      --line: #e2c3bc;
+      --accent: #7d3731;
+      --accent-soft: #f8e7e1;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,0.88), transparent 30%),
+        linear-gradient(180deg, #f8e6df 0%, #f3d8cf 100%);
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 30px 20px 64px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .hero,
+    .section {
+      background: rgba(255, 248, 245, 0.94);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 18px 60px rgba(90, 44, 39, 0.08);
+    }
+    .hero { padding: 30px; }
+    .section {
+      margin-top: 18px;
+      padding: 24px;
+    }
+    .tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.92rem;
+    }
+    h1, h2 {
+      margin: 0 0 14px;
+      line-height: 1.16;
+      font-weight: 700;
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3.3rem); }
+    h2 { font-size: 1.45rem; }
+    p, li {
+      line-height: 1.7;
+      font-size: 1.03rem;
+    }
+    p { margin: 0 0 14px; }
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+    .lead {
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+    .button.primary {
+      color: #fffaf8;
+      border-color: var(--accent);
+      background: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back-link" href="/">Все приложения</a>
+
+    <section class="hero">
+      <div class="tag">Приложение</div>
+      <h1>Грехи</h1>
+      <p class="lead">Фиксация грехов между исповедями и подготовка к Исповеди.</p>
+      <p>
+        Приложение помогает вести личные записи локально на устройстве,
+        формировать список для Исповеди и отслеживать статистику без внешней синхронизации.
+      </p>
+
+      <div class="actions">
+        <a class="button primary" href="/sins/privacy/">Политика конфиденциальности</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Основные возможности</h2>
+      <ul>
+        <li>список текущих, ещё не исповеданных грехов;</li>
+        <li>быстрая фиксация фактов греха;</li>
+        <li>редактирование грехов, фактов и заметок;</li>
+        <li>объединение похожих записей;</li>
+        <li>скрытие старых грехов и фактов;</li>
+        <li>подготовка списка для Исповеди;</li>
+        <li>статистика по месяцам, годам и исповедям;</li>
+        <li>резервные копии и восстановление данных.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>О данных и конфиденциальности</h2>
+      <p>
+        Приложение хранит записи и настройки локально на устройстве пользователя.
+        Подробные сведения об обработке данных приведены в политике конфиденциальности.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

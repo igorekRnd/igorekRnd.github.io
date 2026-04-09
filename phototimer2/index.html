@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhotoTimer-2</title>
+  <meta name="description" content="Интервальная съёмка, таймлапсы и фотосессии по расписанию.">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f7feff;
+      --text: #0c2b35;
+      --muted: #46636d;
+      --line: #b9d9df;
+      --accent: #11789b;
+      --accent-soft: #ddf7f5;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Verdana, Geneva, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.9), transparent 28%),
+        linear-gradient(140deg, #dff8ff 0%, #c7f1ea 52%, #d9f3ff 100%);
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 30px 20px 64px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .hero,
+    .section {
+      background: rgba(247, 254, 255, 0.94);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 18px 60px rgba(12, 86, 110, 0.08);
+    }
+    .hero { padding: 30px; }
+    .section {
+      margin-top: 18px;
+      padding: 24px;
+    }
+    .tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.92rem;
+    }
+    h1, h2 {
+      margin: 0 0 14px;
+      line-height: 1.16;
+      font-weight: 700;
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3.3rem); }
+    h2 { font-size: 1.45rem; }
+    p, li {
+      line-height: 1.7;
+      font-size: 1.03rem;
+    }
+    p { margin: 0 0 14px; }
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+    .lead {
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+    .button.primary {
+      color: #ffffff;
+      border-color: var(--accent);
+      background: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back-link" href="/">Все приложения</a>
+
+    <section class="hero">
+      <div class="tag">Приложение</div>
+      <h1>PhotoTimer-2</h1>
+      <p class="lead">Интервальная съёмка, таймлапсы и фотосессии по расписанию.</p>
+      <p>
+        Приложение помогает снимать серии фотографий через заданный интервал,
+        работать в фоне и хранить отдельные сессии съёмки прямо на устройстве.
+      </p>
+
+      <div class="actions">
+        <a class="button primary" href="/phototimer2/privacy/">Политика конфиденциальности</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Основные возможности</h2>
+      <ul>
+        <li>интервальная съёмка в секундах, минутах и часах;</li>
+        <li>фоновая работа после выхода из приложения;</li>
+        <li>основная и фронтальная камера;</li>
+        <li>режимы `Камера 1`, `CameraX` и `Камера 2`;</li>
+        <li>лимиты по времени, количеству фото и размеру папки;</li>
+        <li>детекция изменений в кадре;</li>
+        <li>галерея сессий, экспорт и ZIP-архивы;</li>
+        <li>ручные настройки экспозиции для совместимых устройств.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>О данных и конфиденциальности</h2>
+      <p>
+        Приложение работает с фотографиями, сессиями и настройками локально на устройстве пользователя.
+        Подробные сведения об обработке данных приведены в политике конфиденциальности.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
