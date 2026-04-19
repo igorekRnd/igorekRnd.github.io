@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Трекер цикла</title>
+  <meta name="description" content="Простой локальный журнал цикла с прогнозом и уведомлениями.">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #fffaf8;
+      --text: #3b2430;
+      --muted: #72515d;
+      --line: #e6c9d4;
+      --accent: #b24d72;
+      --accent-soft: #ffe4ee;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Verdana, Geneva, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.88), transparent 28%),
+        linear-gradient(140deg, #fff0f5 0%, #ffe2ea 52%, #fff6f8 100%);
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 30px 20px 64px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .hero,
+    .section {
+      background: rgba(255, 250, 248, 0.95);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 18px 60px rgba(120, 48, 79, 0.08);
+    }
+    .hero { padding: 30px; }
+    .section {
+      margin-top: 18px;
+      padding: 24px;
+    }
+    .tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.92rem;
+    }
+    h1, h2 {
+      margin: 0 0 14px;
+      line-height: 1.16;
+      font-weight: 700;
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3.3rem); }
+    h2 { font-size: 1.45rem; }
+    p, li {
+      line-height: 1.7;
+      font-size: 1.03rem;
+    }
+    p { margin: 0 0 14px; }
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+    .lead {
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+    .button.primary {
+      color: #ffffff;
+      border-color: var(--accent);
+      background: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back-link" href="/">Все приложения</a>
+
+    <section class="hero">
+      <div class="tag">Приложение</div>
+      <h1>Трекер цикла</h1>
+      <p class="lead">Простой локальный журнал цикла с прогнозом и уведомлениями.</p>
+      <p>
+        Приложение помогает сохранять даты начала и окончания менструации,
+        смотреть ориентировочный прогноз следующих событий и при необходимости
+        создавать резервные копии.
+      </p>
+
+      <div class="actions">
+        <a class="button primary" href="/cycletracker/privacy/">Политика конфиденциальности</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Основные возможности</h2>
+      <ul>
+        <li>добавление и редактирование записей цикла;</li>
+        <li>расчёт средней длины цикла по последним не исключённым записям;</li>
+        <li>прогноз следующей менструации;</li>
+        <li>ориентировочные даты овуляции и фертильного периода;</li>
+        <li>исключение отдельных циклов из прогноза;</li>
+        <li>локальные уведомления о важных событиях цикла;</li>
+        <li>резервные копии, импорт из файла и из буфера обмена.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>О данных и конфиденциальности</h2>
+      <p>
+        Все записи и настройки хранятся локально на устройстве пользователя.
+        Прогноз в приложении носит справочный характер и не является медицинским заключением.
+        Подробные сведения об обработке данных приведены в политике конфиденциальности.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
