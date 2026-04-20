@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Трекер веса</title>
+  <meta name="description" content="Простой локальный трекер веса с напоминаниями и резервными копиями.">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f5fffc;
+      --text: #1d3530;
+      --muted: #3f6660;
+      --line: #b9ddd4;
+      --accent: #1f8a6b;
+      --accent-soft: #ddf4ec;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Verdana, Geneva, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.9), transparent 28%),
+        linear-gradient(140deg, #e9f9f3 0%, #ddf1fb 52%, #effaf6 100%);
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 30px 20px 64px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .hero,
+    .section {
+      background: rgba(245, 255, 252, 0.96);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 18px 60px rgba(20, 97, 74, 0.08);
+    }
+    .hero { padding: 30px; }
+    .section {
+      margin-top: 18px;
+      padding: 24px;
+    }
+    .tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.92rem;
+    }
+    h1, h2 {
+      margin: 0 0 14px;
+      line-height: 1.16;
+      font-weight: 700;
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3.3rem); }
+    h2 { font-size: 1.45rem; }
+    p, li {
+      line-height: 1.7;
+      font-size: 1.03rem;
+    }
+    p { margin: 0 0 14px; }
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+    .lead {
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+    .button.primary {
+      color: #ffffff;
+      border-color: var(--accent);
+      background: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back-link" href="/">Все приложения</a>
+
+    <section class="hero">
+      <div class="tag">Приложение</div>
+      <h1>Трекер веса</h1>
+      <p class="lead">Простой локальный трекер веса с напоминаниями и резервными копиями.</p>
+      <p>
+        Приложение помогает быстро фиксировать вес по дате, смотреть динамику
+        по списку измерений, сравнивать текущий вес с диапазоном нормы и
+        не забывать о регулярных измерениях благодаря напоминаниям.
+      </p>
+
+      <div class="actions">
+        <a class="button primary" href="/weighttracker/privacy/">Политика конфиденциальности</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Основные возможности</h2>
+      <ul>
+        <li>добавление и редактирование записи веса: дата + значение;</li>
+        <li>удаление отдельных записей;</li>
+        <li>список измерений по дате (новые сверху) с изменением к предыдущей строке;</li>
+        <li>карточка диапазона нормального веса по полу и росту;</li>
+        <li>напоминания с периодом в днях и временем;</li>
+        <li>ввод веса прямо из уведомления;</li>
+        <li>экспорт и импорт резервных копий.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>О данных и конфиденциальности</h2>
+      <p>
+        Все данные и настройки хранятся локально на устройстве пользователя.
+        Приложение не отправляет их на внешний сервер автоматически.
+        Подробные сведения об обработке данных приведены в политике конфиденциальности.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
